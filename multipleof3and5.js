@@ -1,11 +1,7 @@
 const multiplesOf3and5 = num => {
-  let sum = 0;
-
-  for (let i = 0; i < num; i++) {
-    if (isMultiple(i)) sum += i;
-  }
-
-  return sum;
+  return Array.from(Array(num).keys())
+    .filter(x => isMultiple(x))
+    .reduce((acc, x) => acc + x)
 };
 
 const isMultiple = num => {
