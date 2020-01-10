@@ -11,5 +11,3 @@ const multiplesOf3and5 = num => {
 const isMultiple = num => {
   return num % 3 === 0 || num % 5 === 0;
 };
-
-console.log(multiplesOf3and5(19564));
