@@ -1,4 +1,4 @@
-const largestPrimeFactor = (num) => {
+const largestPrimeFactor = num => {
     let maxFactor = 0;
     let limit = Math.sqrt(num);
 
