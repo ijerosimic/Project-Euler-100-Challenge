@@ -2,10 +2,10 @@ const largestPrimeFactor = (num) => {
     let maxFactor = 0;
     let limit = Math.sqrt(num);
 
-    if (num < 4)
+    if (isPrime(num))
         return num;
 
-    for (let i = 2; i <= limit; i++) {
+    for (let i = 2; i < limit; i++) {
         if (isPrime(i) && (num % i === 0))
             maxFactor = i;
     }
